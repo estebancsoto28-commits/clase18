@@ -4,30 +4,29 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Objeto 1 usando constructor vacío
-        Vehiculo carro1 = new Vehiculo();
+        // Objeto 1 con constructor vacío
+        Product p1 = new Product();
 
-        // Usando setters
-        carro1.setMarca("Mazda");
-        carro1.setModelo("CX-5");
-        carro1.setAnio(2022);
-        carro1.setPrecio(85000);
+        p1.setId("P001");
+        p1.setName("Laptop");
+        p1.setPrice(2500);
+        p1.setStock(10);
 
-        // Mostrando con toString
-        System.out.println("Carro 1:");
-        System.out.println(carro1);
+         System.out.println("Producto 1:");
+        System.out.println("Nombre: " + p1.getName());
+        System.out.println("Precio: " + p1.getPrice());
+        System.out.println(p1);
 
         System.out.println("----------------------");
 
-        // Objeto 2 usando constructor con parámetros
-        Vehiculo carro2 = new Vehiculo("Toyota", "Corolla", 2020, 45000);
+        // Objeto 2 con constructor lleno
+        Product p2 = new Product("P002", "Mouse", 50, 100);
 
-        // Modificando con setter
-        carro2.setPrecio(43000);
+        p2.setPrice(45);
 
-        // Mostrando información
-        System.out.println("Carro 2:");
-        System.out.println(carro2);
+        System.out.println("Producto 2:");
+        System.out.println("Stock: " + p2.getStock());
+        System.out.println("Precio: " + p2.getPrice());
+        System.out.println(p2);
     }
 }
-
